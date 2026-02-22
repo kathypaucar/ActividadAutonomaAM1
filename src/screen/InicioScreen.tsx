@@ -4,7 +4,7 @@ import { styleGlobal } from '../theme/appTheme'
 import { StackScreenProps } from '@react-navigation/stack'
 import { RootStackParams } from '../navegator/StackNavegator'
 
-type Props = StackScreenProps<RootStackParams, 'Inicio'>
+type Props = StackScreenProps<RootStackParams, 'Bienvenido'>
 
 export const InicioScreen =  ({navigation}: Props)  => {
   return (
@@ -12,7 +12,7 @@ export const InicioScreen =  ({navigation}: Props)  => {
         <Text style={styleGlobal.title}>Bienvenido</Text>
         <Image style={styleGlobal.image}
         source={{
-          uri: 'https://www.innovaweb.cl/wp-content/uploads/2019/07/confeccionar-apps.jpg',
+          uri: 'https://www.canvia.com/wp-content/uploads/2023/03/banner-desarrollo-de-aplicaciones-moviles-1-1.jpg',
         }}
       />
         <TouchableOpacity style={styleGlobal.button}

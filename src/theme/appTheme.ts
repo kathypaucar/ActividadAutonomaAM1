@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { PRIMARY_COLOR, SECONDARY_COLOR, TERTIARY_COLOR } from "../commons/constants";
 
 export const styleGlobal = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#59949C',
+        backgroundColor: PRIMARY_COLOR,
         gap: 50,
     },
     title: {
@@ -15,7 +16,7 @@ export const styleGlobal = StyleSheet.create({
     },
     button:{
       borderRadius: 8,
-      backgroundColor: 'white',
+      backgroundColor: SECONDARY_COLOR,
       paddingHorizontal: 16,
       paddingVertical: 6
     }, 
@@ -27,16 +28,9 @@ export const styleGlobal = StyleSheet.create({
       fontSize: 20
     },
     input:{
-        backgroundColor: '#f1f4f5',
+        backgroundColor: TERTIARY_COLOR,
         paddingHorizontal: 20,
         borderRadius: 8,
         marginVertical: 7  
-    },
-    containerBody: {
-        backgroundColor: '',
-        borderTopLeftRadius: 30,
-        borderTopRightRadius: 30,
-        paddingHorizontal: 30,
-        paddingTop: 40
     }
 })
